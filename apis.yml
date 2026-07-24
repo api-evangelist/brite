@@ -1,7 +1,24 @@
 aid: brite
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/brite.png
 name: Brite
-description: Brite is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Brite is a white-label learning management system (LMS) platform for STEM education, giving
+  educators, academies, and learning centers a single operational tool to run computer-science programs
+  in game and web development. It bundles a ready-made curriculum, classroom and roster management,
+  student progress reporting, and teacher accounts, replacing spreadsheets and disparate software with
+  one branded platform. Brite is offered on free, per-student Professional, and custom school/district
+  tiers. Surfaced as a Techstars portfolio company and added to the API Evangelist network; no public
+  developer API, OpenAPI, or documentation surface was found during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/brite/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Education
+- EdTech
+- Learning Management System
+- STEM
+- Curriculum
+- Coding Education
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/brite-domain-security.yml
 - type: Website
   url: https://gobrite.io/
+- type: Pricing
+  url: https://gobrite.io/plans/
+- type: Blog
+  url: https://gobrite.io/blog/
+- type: PrivacyPolicy
+  url: https://gobrite.io/privacy-policy/
+- type: SignUp
+  url: https://gobrite.io/try-our-free-demo/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
